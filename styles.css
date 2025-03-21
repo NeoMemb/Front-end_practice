@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+/* Global Styles */
+body {
+    font-family: 'Futurist PT', 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav.top-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    border-bottom: 1px solid grey;
+}
+
+.nav-links {
+    text-align: center;
+    list-style: none;
+    flex-grow: 1;
+    display: flex;
+    column-gap: 50px;
+    margin-left: 10%;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.royal-blue {
+  color: blue;
+  font-size: 1.2rem;
+}
+
+.nav-right {
+  
+}
+
+.nav-right a {
+  padding-inline: 5px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #ff4c4c;
+}
+
+/* Sub-navigation */
+.sub-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.sub-nav a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.sub-nav .active {
+    color: red;
+}
