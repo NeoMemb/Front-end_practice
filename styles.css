@@ -1,18 +1,34 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+:root {
+    /* Color palette */
+    --Orange: #ff764d;
+    --royal-blue: #0000ff;
+    --Yellow: #fbffa7;
+    --light-blue: #b1c5ff;
+    --Cyan: #b6ffc0;
+    --light-purple: #d5b3ff;
+
+}
+
+* {
+    box-sizing: border-box;
+}
 
 /* Global Styles */
 body {
-    font-family: 'Futurist PT', 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
+    position: relative;
 }
 
 /* Navigation Bar */
 nav.top-header {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 10px;
     align-items: center;
     border-bottom: 1px solid grey;
 }
@@ -22,14 +38,15 @@ nav.top-header {
     list-style: none;
     flex-grow: 1;
     display: flex;
-    column-gap: 50px;
-    margin-left: 10%;
+    text-align: left;
+    margin-left: 0;
 }
 
 .nav-links a {
     text-decoration: none;
     color: black;
     font-size: 16px;
+    padding-right: 25px;
 }
 
 .royal-blue {
@@ -52,40 +69,49 @@ a {
   font-weight: bold;
 }
 
-/* Hero Section */
-.hero {
-    position: relative;
-    text-align: center;
-}
-
-.hero img {
-    width: 100%;
-    height: auto;
-}
-
-.hero-title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 80px;
-    color: #ff4c4c;
-}
 
 /* Sub-navigation */
 .sub-nav {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    width: inherit; 
     gap: 30px;
-    margin-top: 20px;
+    padding-left: 20px;
+    margin-block: 10px;
 }
 
 .sub-nav a {
     text-decoration: none;
-    font-size: 18px;
+    font-size: .9rem;
     color: black;
 }
 
 .sub-nav .active {
     color: red;
+}
+
+
+/*   Main section    */
+
+main > * {
+    padding: 5rem 30rem;
+}
+
+section.hero {
+    background-image:url(/Images/header.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+
+.hero-title h1 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 80px;
+    color: #ff4c4c;
 }
