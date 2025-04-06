@@ -2,7 +2,7 @@
 
 :root {
     /* Color palette */
-    --Orange: #ff764d;
+    --Orange: rgb(253, 89, 72);
     --royal-blue: #0000ff;
     --Yellow: #fbffa7;
     --light-blue: #b1c5ff;
@@ -13,6 +13,7 @@
 
 * {
     box-sizing: border-box;
+    padding: 0;
 }
 
 /* Global Styles */
@@ -20,8 +21,17 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
     position: relative;
+    width: 100vw;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    overflow-x: hidden;
+    background-color: #f3f3f3;
+}
+
+::selection {
+    background-color: var(--royal-blue);
+    color: #fff;
 }
 
 /* Navigation Bar */
@@ -78,7 +88,6 @@ a {
     width: inherit; 
     gap: 30px;
     padding-left: 20px;
-    margin-block: 10px;
 }
 
 .sub-nav a {
@@ -93,9 +102,14 @@ a {
 
 
 /*   Main section    */
+main * {
+    padding: 0;
+}
 
-main > * {
-    padding: 5rem 30rem;
+.page-about {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
 }
 
 section.hero {
@@ -103,6 +117,12 @@ section.hero {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    margin-left: 8.333rem;
+    margin-right: 8.333rem;
+    margin-bottom: 8.333rem;
+    height: 109.75rem;
+    min-height: 1756px;
+    width: 83.334rem;
 }
 
 
@@ -112,6 +132,12 @@ section.hero {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); */
-    font-size: 80px;
+    font-size: 1rem;
     color: #ff4c4c;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.page {
+    max-width: 1600px;
 }
