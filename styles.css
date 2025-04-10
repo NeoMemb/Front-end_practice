@@ -35,6 +35,7 @@ body {
     line-height: 24px;
     overflow-x: hidden;
     background-color: var(--bg-color);
+    min-height: 100vh;
 }
 
 ::selection {
@@ -149,6 +150,11 @@ header .separator {
 /* Sub-navigation */
 .nav-buttom {
     padding: 1rem 1.2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: sticky;
+    top: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .nav-buttom ul li {
@@ -183,18 +189,45 @@ section.hero {
     height: 100vh;
 }
 
-
-
-.hero-title h1 {
-    position: absolute;
+.hero-title {
+    /* position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -25%);
+    font-size: 10rem;
+    color: #ff4c4c;
+    font-weight: 700; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+}
+.hero-title > h1 {
     font-size: 10rem;
     color: #ff4c4c;
     font-weight: 700;
 }
 
-.page {
+/* .page {
     max-width: 1600px;
+} */
+
+.content {
+    width: 800px;
+    margin-inline: auto;
+    margin-bottom: 133.33px;
+}
+
+.content > h1 {
+    margin-bottom: 20px;
+    line-height: 2rem;
+    font-size: 30px;
+    word-spacing: .5rem;
+}
+
+.content > p {
+    line-height: 30px;
+    font-size: 20px;
 }
