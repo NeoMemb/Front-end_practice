@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+@font-face {
+    font-family: 'futura pt';
+    src: url('/Futura-Pt_Fonts/FuturaCyrillicBook.ttf') format("truetype");
+    font-weight: 400;
+    font-style: bolder;
+}
+
 :root {
     /* Color palette */
     --Orange: rgb(253, 89, 72);
@@ -8,6 +15,7 @@
     --light-blue: #b1c5ff;
     --Cyan: #b6ffc0;
     --light-purple: #d5b3ff;
+    --bg-color: white;
 }
 
 * {
@@ -18,7 +26,7 @@
 
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'futura pt', 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     position: relative;
@@ -26,7 +34,7 @@ body {
     font-size: 1rem;
     line-height: 24px;
     overflow-x: hidden;
-    background-color: #f3f3f3;
+    background-color: var(--bg-color);
 }
 
 ::selection {
@@ -83,13 +91,14 @@ a, ul {
 
 .nav-list {
     /* width: 100vw; */
-    margin-left: 48px;
+    /* margin-left: 32px; */
 }
 
 .nav-list ul {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: space-between;
+    /* align-content: center; */
     overflow: hidden;
     width: 100%;
     margin-block: 16px;
@@ -134,7 +143,7 @@ button.menu { display: none;}
 
 header .separator {
     height: 2px;
-    border-top: 1px solid rgb(202, 202, 202);
+    border-top: 2px solid rgb(238, 238, 238);
 }
 
 /* Sub-navigation */
@@ -170,25 +179,20 @@ section.hero {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    margin-left: 8.333rem;
-    margin-right: 8.333rem;
-    margin-bottom: 8.333rem;
-    min-height: 1756px;
+    margin: 0 8.33rem 8.33rem 8.33rem;
     height: 100vh;
-    width: 83.334rem;
 }
 
 
 
 .hero-title h1 {
-    /* position: absolute;
+    position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); */
-    font-size: 1rem;
+    transform: translate(-50%, -50%);
+    font-size: 10rem;
     color: #ff4c4c;
-    line-height: 1.5rem;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .page {
