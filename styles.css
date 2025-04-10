@@ -131,31 +131,20 @@ button.menu { display: none;}
     white-space: nowrap;
 }
 
+header .separator {
+    height: 2px;
+    border-top: 1px solid rgb(202, 202, 202);
+}
+
 /* Sub-navigation */
-.sub-nav {
+header .nav-buttom ul {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    background-color: transparent;
-    width: inherit; 
-    gap: 30px;
-    padding-left: 20px;
-}
-
-.sub-nav a {
-    text-decoration: none;
-    font-size: .9rem;
-    color: black;
-}
-
-.sub-nav .active {
-    color: red;
 }
 
 
 /*   Main section    */
-main * {
-    padding: 0;
-}
 
 .page-about {
     font-size: 1rem;
