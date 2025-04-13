@@ -217,17 +217,43 @@ section.hero {
 .content {
     width: 800px;
     margin-inline: auto;
+    /* margin-inline: auto; */
     margin-bottom: 133.33px;
 }
 
-.content > h1 {
+.content-wrapper > h1 {
     margin-bottom: 20px;
     line-height: 2rem;
     font-size: 30px;
     word-spacing: .5rem;
 }
 
-.content > p {
+.content-wrapper > p {
     line-height: 30px;
     font-size: 20px;
 }
+
+.pic-grid-container {
+    display: grid;
+    grid-template-columns: 500px 700px;
+    grid-template-rows: 1fr;
+    justify-content: end;
+    /* width: 1600px;
+    height: 800px; */
+    margin-bottom: 133.333px;
+    padding-bottom: 133.333px;
+    padding-top: 133.333px;
+}
+
+.grid1 {
+    background-color: var(--Yellow);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid1 img,
+.grid2 img {
+    background-size: cover;
+}
+
