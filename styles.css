@@ -90,11 +90,6 @@ a, ul {
     list-style-type: none;
 }
 
-.nav-list {
-    /* width: 100vw; */
-    /* margin-left: 32px; */
-}
-
 .nav-list ul {
     display: flex;
     align-items: center;
@@ -233,27 +228,53 @@ section.hero {
     font-size: 20px;
 }
 
-.pic-grid-container {
+.grid-container-1 {
     display: grid;
-    grid-template-columns: 500px 700px;
+    grid-template-columns: repeat(5, 20%);
     grid-template-rows: 1fr;
-    justify-content: end;
-    /* width: 1600px;
-    height: 800px; */
-    margin-bottom: 133.333px;
-    padding-bottom: 133.333px;
-    padding-top: 133.333px;
+    align-items: center;
+    border: 2px solid purple;
+    border-radius: 10px;
+    padding-block: 20px;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
-
-.grid1 {
+/* .item {
+    font-size: 2.5em;
+} */
+.item-1 { 
+    /* background-color: red; */
+    z-index: 10000;
+    grid-column: 1/4;
+    grid-row: 1/2;
+}
+ 
+.item-3 { 
     background-color: var(--Yellow);
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 3/6;
+    grid-row: 1/2;
+    /* padding-inline: 50px; */
+    padding: 50px 80px;
+    /* height: 100%; */
 }
 
-.grid1 img,
-.grid2 img {
+.item img {
+    background-position: center;
     background-size: cover;
+    height: 65%;
+    width: 65%;
+    margin-left: 20%;
 }
 
+.item-1 .item-1-pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    height: auto;
+    width: auto;
+}
