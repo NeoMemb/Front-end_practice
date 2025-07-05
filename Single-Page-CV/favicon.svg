@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Define mask to cut out the '>' symbol -->
+  <mask id="cut-out">
+    <rect width="100" height="100" fill="white"/>
+    <!-- Use '>' character directly here -->
+    <text x="20" y="75" font-size="100" font-family="monospace" fill="black">&gt;</text>
+  </mask>
+
+  <!-- White background with cut-out '>' -->
+  <rect width="100" height="100" fill="white" mask="url(#cut-out)"/>
+</svg>

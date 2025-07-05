@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "digital";
+    src: url(./digital-7/digital-7.ttf);
+}
+
+:root {
+    --LCD-bg: rgb(70, 0, 0);
+    --LCD-clr: red;
+    --frame-clr: rgb(37, 37, 37);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* height: 100vh; */
+    background: url(starry-sky.jpg);
+    background-size: cover;
+    font-family: "digital", monospace;
+    color: black;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    height: 100vh;
+    width: 50vw;
+}
+
+p#time > span {
+    padding: 10x;
+    width: 3ch;
+    font-size: xx-large;
+    letter-spacing: 4px;
+    /* font-weight: bold; */
+}
+
+p#time {
+    background-color: var(--LCD-bg);
+    color: var(--LCD-clr);
+    height: 100px;
+    padding: 50px;
+    /* border-radius: 50px; */
+    
+}
+
+.time-section {
+    border: 10px solid black;
+    border-radius: 80px;
+    overflow: hidden;
+}
+
+.frame {
+    /* border: 2em solid var(--frame-clr); */
+    background: linear-gradient(135deg, black 40%, grey 20%, black 10%, grey 5%, black);
+    border-radius: 120px;
+    padding: 20px;
+}
+
+/* I was trying ::after before */
+.frame::after {
+    position: absolute;
+    content: "";
+    background-color: teal;
+    inset: 0.2;
+}
