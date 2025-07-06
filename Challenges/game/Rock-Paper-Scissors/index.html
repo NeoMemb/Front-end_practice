@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock - Paper - Scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="m-5 h-full bg-green-100 flex flex-col items-center justify-center">
+    <div class="game-title font-extrabold tracking-wide text-center   text-green-900 text-2xl">
+        <h1 class="text-5xl">Rock - Paper - Scissors</h1>
+    </div>
+    <div class="container card flex items-center justify-around flex-row bg-white shadow-lg rounded-lg p-6 mt-10">
+        <button id="scissors" class="h-15 w-15 shadow-lg rounded-full bg-green-800 ">✂</button>
+        <button id="paper" class="button h-15 w-15 shadow-lg rounded-full bg-green-800">📃</button>
+        <button id="rock" class="button h-15 w-15 shadow-lg rounded-full bg-green-800">🥌</button>
+    </div>
+
+    <div class="player_and_computer">
+        <div class="w-70 font-bold text-xl rounded-lg bg-green-800 text-white p-3 my-3">
+            Computer: <span class="computer"></span>
+        </div>
+        <div class="w-70 font-bold text-xl rounded-lg bg-green-800 text-white p-3 my-3">
+            Player: <span class="player"></span>
+        </div>
+    </div>
+
+    <div class="result">
+            <h1 class="status font-extrabold"></h1>
+    </div>
+
+    <div class="score font-bold bg-blue-300 absolute bottom-3 p-4 shadow-lg w-70 rounded-lg">
+        <div class="text-2xl text-center">Score(s)</div>
+        <div id="computer-score" class="text-left">Computer: <span class="computer-score"></span></div>
+        <div id="player-score" class="text-left">Player: <span class="player-score"></span></div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
